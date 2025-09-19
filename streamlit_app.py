@@ -25,11 +25,11 @@ def load_data():
     
     try:
         # Load the original CSV files
-        patients = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\patients.csv")
-        doctors = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\doctors.csv") 
-        appointments = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\appointments.csv")
-        treatments = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\treatments.csv")
-        billing = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\billing.csv")
+        patients = pd.read_csv(r"patients.csv")
+        doctors = pd.read_csv(r"doctors.csv") 
+        appointments = pd.read_csv(r"appointments.csv")
+        treatments = pd.read_csv(r"treatments.csv")
+        billing = pd.read_csv(r"billing.csv")
         
         # Basic data processing
         patients['birth_date'] = pd.to_datetime(patients['date_of_birth'])
