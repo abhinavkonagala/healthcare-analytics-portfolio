@@ -20,11 +20,11 @@ st.set_page_config(
 def load_data():
     try:
         # Load the original CSV files
-        patients = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\archive (1)\patients.csv")
-        doctors = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\archive (1)\doctors.csv") 
-        appointments = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\archive (1)\appointments.csv")
-        treatments = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\archive (1)\treatments.csv")
-        billing = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\archive (1)\billing.csv")
+        patients = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\patients.csv")
+        doctors = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\doctors.csv") 
+        appointments = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\appointments.csv")
+        treatments = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\treatments.csv")
+        billing = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\billing.csv")
         
         # Basic data processing
         patients['birth_date'] = pd.to_datetime(patients['date_of_birth'])
