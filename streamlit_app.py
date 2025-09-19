@@ -76,9 +76,9 @@ def main():
     st.title("Healthcare Analytics Dashboard")
     st.markdown("### Optimizing Hospital Operations Through Data-Driven Insights")
 
-    if st.button("Clear Cache"):
-        st.cache_data.clear()
-        st.rerun()
+    #if st.button("Clear Cache"):
+        #st.cache_data.clear()
+        #st.rerun()
     
     # Load data
     data_loaded = load_data()
