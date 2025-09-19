@@ -18,6 +18,11 @@ st.set_page_config(
 # Load data function
 @st.cache_data
 def load_data():
+    # Debug: Show what files are available
+    import os
+    st.write("Files in current directory:", os.listdir('.'))
+    st.write("Current working directory:", os.getcwd())
+    
     try:
         # Load the original CSV files
         patients = pd.read_csv(r"C:\Users\Abhin\OneDrive\Documents\healthcare-analytics-portfolio\patients.csv")
