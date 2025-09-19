@@ -19,9 +19,9 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     # Debug: Show what files are available
-    import os
-    st.write("Files in current directory:", os.listdir('.'))
-    st.write("Current working directory:", os.getcwd())
+    #import os
+    #st.write("Files in current directory:", os.listdir('.'))
+    #st.write("Current working directory:", os.getcwd())
     
     try:
         # Load the original CSV files
@@ -75,6 +75,10 @@ def load_data():
 def main():
     st.title("Healthcare Analytics Dashboard")
     st.markdown("### Optimizing Hospital Operations Through Data-Driven Insights")
+
+    if st.button("Clear Cache"):
+        st.cache_data.clear()
+        st.rerun()
     
     # Load data
     data_loaded = load_data()
